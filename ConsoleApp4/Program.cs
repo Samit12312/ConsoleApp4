@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.SymbolStore;
 using System.Linq;
@@ -46,13 +46,40 @@ namespace ConsoleApp2
 
         }
 
+        static void Targil4()
+        {
+            int num;
+
+            Console.WriteLine("enter num");
+
+            num = int.Parse(Console.ReadLine());
+
+            int meot = num / 100;
+
+            int asarot = num / 10 % 10;
+
+            int ahadot = num % 10;
+            Console.WriteLine("meot" + meot);
+            Console.WriteLine("asarot" + asarot);
+            Console.WriteLine("ahadot" + ahadot);
+
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine("Write a three-digit number");
+            int num;
+            
+            Console.WriteLine("enter num");
+            
+            num = int.Parse(Console.ReadLine());
+            
+            int meot = num / 100;
 
-            int three_didget_number = int.Parse(Console.ReadLine());
+            int asarot = num / 10 % 10;
 
-            Console.WriteLine(three_didget_number);   
+            int ahadot = num % 10;
+            Console.WriteLine("meot" + meot);
+            Console.WriteLine("asarot" + asarot);
+            Console.WriteLine("ahadot" + ahadot);
 
             Console.ReadLine();
         }
