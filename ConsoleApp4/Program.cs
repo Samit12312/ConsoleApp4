@@ -71,9 +71,12 @@ namespace ConsoleApp2
             Console.WriteLine("enter num2");
             int num2 = int.Parse(Console.ReadLine());
 
-            int = Math.Pow(num1,num2);
+            int max = Math.Max(num1, num2);
+            int min = Math.Min(num2, num1);
+            double num3 = Math.Pow(max, min);
+            Console.WriteLine("result " + num3);
 
-            Console.WriteLine($"{num1} {num2}");
+
             Console.ReadLine();
         }
     }
