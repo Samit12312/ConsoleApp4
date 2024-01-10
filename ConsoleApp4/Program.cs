@@ -66,21 +66,14 @@ namespace ConsoleApp2
         }
         static void Main(string[] args)
         {
-            int num;
-            
-            Console.WriteLine("enter num");
-            
-            num = int.Parse(Console.ReadLine());
-            
-            int meot = num / 100;
+            Console.WriteLine("enter 1 number");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter num2");
+            int num2 = int.Parse(Console.ReadLine());
 
-            int asarot = num / 10 % 10;
+            int = Math.Pow(num1,num2);
 
-            int ahadot = num % 10;
-            Console.WriteLine("meot" + meot);
-            Console.WriteLine("asarot" + asarot);
-            Console.WriteLine("ahadot" + ahadot);
-
+            Console.WriteLine($"{num1} {num2}");
             Console.ReadLine();
         }
     }
