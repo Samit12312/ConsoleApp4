@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.SymbolStore;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -82,17 +83,13 @@ namespace ConsoleApp2
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("enter num 1");
+            Console.WriteLine("put a number and click enter");
             int num1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("enter num2");
-            int num2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("num");
+            Random rnd = new Random();
+            int num = rnd.Next(1, 101);
 
-            int max = Math.Max(num1, num2);
-            int min = Math.Min(num2, num1);
-            double num3 = Math.Pow(max, min);
-            Console.WriteLine("num" + num3);
-
-
+            Console.WriteLine(num);
             Console.ReadLine();
         }
     }
