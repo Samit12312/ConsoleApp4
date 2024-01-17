@@ -66,15 +66,14 @@ namespace ConsoleApp2
         }
         static void Targil5()
         {
-            Console.WriteLine("enter 1 number");
+            Console.WriteLine("inter num 1");
             int num1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("enter num2");
+            Console.WriteLine("inter num2");
             int num2 = int.Parse(Console.ReadLine());
 
-            int max = Math.Max(num1, num2);
-            int min = Math.Min(num2, num1);
-            double num3 = Math.Pow(max, min);
-            Console.WriteLine("result " + num3);
+
+            double num3 = Math.Pow(num1, num2);
+            Console.WriteLine("num" + num3);
 
 
             Console.ReadLine();
@@ -82,15 +81,14 @@ namespace ConsoleApp2
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("enter 1 number");
+            Console.WriteLine("inter num 1");
             int num1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("enter num2");
+            Console.WriteLine("inter num2");
             int num2 = int.Parse(Console.ReadLine());
 
-            int max = Math.Max(num1, num2);
-            int min = Math.Min(num2, num1);
-            double num3 = Math.Pow(max, min);
-            Console.WriteLine("result " + num3);
+
+            double num3 = Math.Pow(num1, num2);
+            Console.WriteLine("num" + num3);
 
 
             Console.ReadLine();
